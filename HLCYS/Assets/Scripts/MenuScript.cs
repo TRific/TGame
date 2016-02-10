@@ -53,7 +53,7 @@ public class MenuScript : MonoBehaviour {
    public void OnStartGame()
     {
         Debug.Log("You pressed Start Game");
-        //SceneManager.LoadScene("OptionPage");
+        SceneManager.LoadScene("NewGamePage");
     }
 
     public void OnOptions()
