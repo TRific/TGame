@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
     public enum pauseStates { Pause, NotPause};
     public pauseStates currentstate;
+    public bool paused;
 
     //Menu Panel Objects
     public GameObject pauseMenu;
@@ -15,6 +16,7 @@ public class PauseMenu : MonoBehaviour {
     // Use this for initialization
     void Awake () {
         currentstate = pauseStates.NotPause;
+        paused = false;
     }
 	
 	// Update is called once per frame
@@ -25,13 +27,13 @@ public class PauseMenu : MonoBehaviour {
                 //set active gameobjects for main menu
                 nopauseMenu.SetActive(true);
                 pauseMenu.SetActive(false);
-                theBox.SetActive(true);
+                //theBox.SetActive(true);
                 break;
             case pauseStates.Pause:
                 //set active gameobjects for main menu
                 nopauseMenu.SetActive(false);
                 pauseMenu.SetActive(true);
-                theBox.SetActive(false);
+                //theBox.SetActive(false);
                 break;
         }
     }
@@ -40,6 +42,8 @@ public class PauseMenu : MonoBehaviour {
     {
         Debug.Log("You pressed Pause");
         currentstate = pauseStates.Pause;
+        Time.timeScale = 0;
+        paused = true;
 
     }
 
@@ -47,13 +51,16 @@ public class PauseMenu : MonoBehaviour {
     {
         Debug.Log("You pressed Unpause");
         currentstate = pauseStates.NotPause;
-
+        Time.timeScale = 1;
+        paused = false;
     }
 
     public void OnMainMenuGame()
     {
         Debug.Log("You pressed Pause");   
         SceneManager.LoadScene("NewTitlePage");
-
+        SceneManager.UnloadScene("NewGamePage");
+        Time.timeScale = 1;
+        paused = false;
     }
 }
