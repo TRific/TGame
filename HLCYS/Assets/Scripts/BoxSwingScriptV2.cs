@@ -5,7 +5,10 @@ public class BoxSwingScriptV2 : MonoBehaviour {
     private float fingerStartTime = 0.0f;
     private Vector2 fingerStartPos = Vector2.zero;
     public Animator anim;
-
+    public bool player_is_dead = false;
+    public GameObject GAMEOVER_MENU;
+    public GameObject pauseMenu;
+    public GameObject nopauseMenu;
 
     private bool isSwipe = false;
     private float minSwipeDist = 50.0f;
@@ -33,6 +36,17 @@ public class BoxSwingScriptV2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (player_is_dead)
+        {
+            GAMEOVER_MENU.SetActive(true);
+            pauseMenu.SetActive(false);
+            nopauseMenu.SetActive(false);
+
+            Time.timeScale = 0;
+
+        }
+
         var myPosition = transform.position;
         if (Input.touchCount > 0){
 
@@ -261,5 +275,15 @@ public class BoxSwingScriptV2 : MonoBehaviour {
         transform.position = dest;       
     }
 
+
+    void OnTriggerEnter(Collider col)
+    {
+        //if (col.gameObject.name == "Cube")
+        //{
+        Destroy(col.gameObject);
+        Debug.Log(col.gameObject.name);
+        player_is_dead = true;
+        //}a
+    }
 
 }

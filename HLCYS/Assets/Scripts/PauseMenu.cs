@@ -11,12 +11,14 @@ public class PauseMenu : MonoBehaviour {
     //Menu Panel Objects
     public GameObject pauseMenu;
     public GameObject nopauseMenu;
-    public GameObject theBox;
+    //public GameObject thePlayer;
+    public GameObject GAMEOVER_MENU;
 
     // Use this for initialization
     void Awake () {
         currentstate = pauseStates.NotPause;
         paused = false;
+        Time.timeScale = 1;
     }
 	
 	// Update is called once per frame
@@ -27,14 +29,17 @@ public class PauseMenu : MonoBehaviour {
                 //set active gameobjects for main menu
                 nopauseMenu.SetActive(true);
                 pauseMenu.SetActive(false);
+                GAMEOVER_MENU.SetActive(false);
                 //theBox.SetActive(true);
                 break;
             case pauseStates.Pause:
                 //set active gameobjects for main menu
                 nopauseMenu.SetActive(false);
                 pauseMenu.SetActive(true);
+                GAMEOVER_MENU.SetActive(false);
                 //theBox.SetActive(false);
                 break;
+         
         }
     }
 

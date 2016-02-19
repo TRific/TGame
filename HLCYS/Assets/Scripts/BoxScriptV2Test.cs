@@ -5,6 +5,11 @@ public class BoxScriptV2Test : MonoBehaviour {
 
     public Animator anim;
     public float speed = 9f;
+    public bool player_is_dead = false;
+    public GameObject GAMEOVER_MENU;
+    public GameObject pauseMenu;
+    public GameObject nopauseMenu;
+
     //private bool lerpOn = false;
     //public float delay = 0.5f;
     //position 7,8,9 (top 3)
@@ -37,13 +42,22 @@ public class BoxScriptV2Test : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-       
+
+        if (player_is_dead)
+        {
+            GAMEOVER_MENU.SetActive(true);
+            pauseMenu.SetActive(false);
+            nopauseMenu.SetActive(false);
+            
+            Time.timeScale = 0;
+
+        }
         var myPosition = transform.position;
-        Debug.Log(myPosition);
-        Debug.Log("IN UPDATE");
+        //Debug.Log(myPosition);
+        //Debug.Log("IN UPDATE");
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            Debug.Log("KEY RIGHT PRESSED");
+            //Debug.Log("KEY RIGHT PRESSED");
             if (myPosition.Equals(pos7)) //7 will go to pos8
             {
                 anim.Play("bankright", -1, 0f);
@@ -113,7 +127,7 @@ public class BoxScriptV2Test : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Debug.Log("KEY LEFT PRESSED");
+            //Debug.Log("KEY LEFT PRESSED");
             if (myPosition.Equals(pos8))
             {
              //   lerpOn = true;
@@ -181,7 +195,7 @@ public class BoxScriptV2Test : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("KEY UP PRESSED");
+            //Debug.Log("KEY UP PRESSED");
             if (myPosition.Equals(pos1))
             {
               //  lerpOn = true;
@@ -239,7 +253,7 @@ public class BoxScriptV2Test : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            Debug.Log("KEY DOWN PRESSED");
+            //Debug.Log("KEY DOWN PRESSED");
             if (myPosition.Equals(pos7))
             {
               //  lerpOn = true;
@@ -330,4 +344,13 @@ public class BoxScriptV2Test : MonoBehaviour {
        // lerpOn = false;
     }
 
+    void OnTriggerEnter(Collider col)
+    {
+        //if (col.gameObject.name == "Cube")
+        //{
+        Destroy(col.gameObject);
+        Debug.Log(col.gameObject.name);
+        player_is_dead = true;
+        //}a
+    }
 }

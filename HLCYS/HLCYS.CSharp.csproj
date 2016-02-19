@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\BoxScriptSwipe.cs" />
     <Compile Include="Assets\Scripts\BoxScriptV2Test.cs" />
     <Compile Include="Assets\Scripts\BoxSwingScriptV2.cs" />
+    <Compile Include="Assets\Scripts\CollisionDetector.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LeftBlgGeneration.cs" />
     <Compile Include="Assets\Scripts\Lerping.cs" />
@@ -80,9 +81,12 @@
     <Compile Include="Assets\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\Obj_Tran_Gen.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PixelPerfectCamera.cs" />
     <Compile Include="Assets\Scripts\RightBlgGeneration.cs" />
+    <Compile Include="Assets\Scripts\ScoreDisplayGameOver.cs" />
+    <Compile Include="Assets\Scripts\ScoreScript.cs" />
     <Compile Include="Assets\Scripts\SmoothT.cs" />
     <Compile Include="Assets\Scripts\StreetGeneration.cs" />
     <Compile Include="Assets\Scripts\TextureScroll1.cs" />
