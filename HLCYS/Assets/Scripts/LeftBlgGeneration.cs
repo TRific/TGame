@@ -18,7 +18,7 @@ public class LeftBlgGeneration : MonoBehaviour {
     //private float distanceBetweenMax;
     private Vector3 startGenerationPoint1 = new Vector3(27f, 0.0f, -55.0f);
     //public Vector3 startGenerationPoint2 = new Vector3(0.0f, 0.0f, -40.0f);
-    public float speed = -90.0f;
+    public float speed = -100.0f;
 
     // Use this for initialization
     void Start()

@@ -5,27 +5,29 @@ public class BoxSwingScriptV2 : MonoBehaviour {
     private float fingerStartTime = 0.0f;
     private Vector2 fingerStartPos = Vector2.zero;
     public Animator anim;
-    public bool player_is_dead = false;
+    static public bool player_is_dead = false;
     public GameObject GAMEOVER_MENU;
     public GameObject pauseMenu;
     public GameObject nopauseMenu;
+	public AudioSource bike;
+	public AudioClip crash_sfx;
 
     private bool isSwipe = false;
     private float minSwipeDist = 50.0f;
     private float maxSwipeTime = 0.5f;
 
     //mine
-    static Vector3 pos7 = new Vector3(-5.8f, 2.4f, 25f);
-    static public Vector3 pos8 = new Vector3(-0.4f, 2.4f, 25f);
-    static public Vector3 pos9 = new Vector3(5.0f, 2.4f, 25f);
+    static Vector3 pos7 = new Vector3(-5.8f, 2.7f, 25f);
+    static public Vector3 pos8 = new Vector3(-0.4f, 2.7f, 25f);
+    static public Vector3 pos9 = new Vector3(5.0f, 2.7f, 25f);
     //position 4,5,6 (mid 3)
-    static public Vector3 pos4 = new Vector3(-5.8f, 2.4f, 12f);
-    static public Vector3 pos5 = new Vector3(-0.4f, 2.4f, 12f);
-    static public Vector3 pos6 = new Vector3(5.0f, 2.4f, 12f);
+    static public Vector3 pos4 = new Vector3(-5.8f, 2.7f, 12f);
+    static public Vector3 pos5 = new Vector3(-0.4f, 2.7f, 12f);
+    static public Vector3 pos6 = new Vector3(5.0f, 2.7f, 12f);
     //position 1,2,3 (bot 3)
-    static public Vector3 pos1 = new Vector3(-5.8f, 2.4f, -3.8f);
-    static public Vector3 pos2 = new Vector3(-0.4f, 2.4f, -3.8f);
-    static public Vector3 pos3 = new Vector3(5.0f, 2.4f, -3.8f);
+    static public Vector3 pos1 = new Vector3(-5.8f, 2.7f, -3.8f);
+    static public Vector3 pos2 = new Vector3(-0.4f, 2.7f, -3.8f);
+    static public Vector3 pos3 = new Vector3(5.0f, 2.7f, -3.8f);
     // Use this for initialization
     void Start () {
 
@@ -280,6 +282,7 @@ public class BoxSwingScriptV2 : MonoBehaviour {
     {
         //if (col.gameObject.name == "Cube")
         //{
+		bike.PlayOneShot(crash_sfx,0.2f);
         Destroy(col.gameObject);
         Debug.Log(col.gameObject.name);
         player_is_dead = true;

@@ -74,6 +74,11 @@
     <Compile Include="Assets\Scripts\BoxScriptV2Test.cs" />
     <Compile Include="Assets\Scripts\BoxSwingScriptV2.cs" />
     <Compile Include="Assets\Scripts\CollisionDetector.cs" />
+    <Compile Include="Assets\Scripts\CollisionObjDestroyer.cs" />
+    <Compile Include="Assets\Scripts\DestroyingObjs.cs" />
+    <Compile Include="Assets\Scripts\DisplayHighSchool.cs" />
+    <Compile Include="Assets\Scripts\DragonBehaviorScript.cs" />
+    <Compile Include="Assets\Scripts\FireballScript.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LeftBlgGeneration.cs" />
     <Compile Include="Assets\Scripts\Lerping.cs" />

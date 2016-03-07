@@ -1,0 +1,525 @@
+fileFormatVersion: 2
+guid: 70a59241631b3d8469b6ac1937140b77
+timeCreated: 1456705146
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: clawBody_1_1
+    100002: clawBody_1_2
+    100004: clawBody_1_3
+    100006: clawBody_1_4
+    100008: clawBody_1_5
+    100010: clawBody_1_6
+    100012: clothJointEndLeft_result
+    100014: clothJointEndLeft_result 1
+    100016: cluster13Handle
+    100018: cluster14Handle
+    100020: cluster15Handle
+    100022: cluster16Handle
+    100024: cluster1Handle
+    100026: cluster3Handle
+    100028: cluster4Handle
+    100030: curve40
+    100032: curve43
+    100034: //RootNode
+    100036: DO_NOT_TOUCH_GRP
+    100038: dragonCylinder_1
+    100040: dragonCylinder_10
+    100042: dragonCylinder_11
+    100044: dragonCylinder_2
+    100046: dragonCylinder_3
+    100048: dragonCylinder_4
+    100050: dragonCylinder_5
+    100052: dragonCylinder_6
+    100054: dragonCylinder_7
+    100056: dragonCylinder_8
+    100058: dragonCylinder_9
+    100060: DragonMouth
+    100062: first_ribJointLeft_1_result
+    100064: first_ribJointLeft_2_result
+    100066: first_ribJointLeft_3_result
+    100068: first_ribJointRight_1_result
+    100070: first_ribJointRight_2_result
+    100072: first_ribJointRight_3_result
+    100074: GEO
+    100076: group3
+    100078: Head
+    100080: Head_joint_result
+    100082: headBandJoin_result
+    100084: ikHandle1
+    100086: ikHandle4
+    100088: ikHandle5
+    100090: jawJoint_result
+    100092: joint30
+    100094: joint31
+    100096: joint32
+    100098: joint33
+    100100: joint34
+    100102: joint35
+    100104: joint67
+    100106: joint67 1
+    100108: joint67 2
+    100110: joint67 3
+    100112: joint69
+    100114: joint71
+    100116: joint74
+    100118: joint76
+    100120: joint76 1
+    100122: joint78
+    100124: joint82
+    100126: joint84
+    100128: joint86
+    100130: joint89
+    100132: leftMane_neck_const_loc
+    100134: leftMane_neck_end_const_loc
+    100136: mane_cluster_GRP
+    100138: mane_neck_const_loc
+    100140: mane_neck_end_cost_loc
+    100142: maneCluster_4
+    100144: maneJoint_1_result
+    100146: maneRig_GRP
+    100148: mouthJoint_result
+    100150: neck_shoulder_const_loc
+    100152: neckClothJointLeft_result
+    100154: neckClothJointRight_result
+    100156: neckFK_ctrl_7
+    100158: neckIK_const_loc
+    100160: neckJNT_IKconst_GRP
+    100162: neckJNT_resultConst_GRP
+    100164: neckJoint_10_FK
+    100166: neckJoint_10_IK
+    100168: neckJoint_10_result
+    100170: neckJoint_11_FK
+    100172: neckJoint_11_IK
+    100174: neckJoint_11_result
+    100176: neckJoint_12_FK
+    100178: neckJoint_12_IK
+    100180: neckJoint_12_IK 1
+    100182: neckJoint_12_result
+    100184: neckJoint_1_FK
+    100186: neckJoint_1_IK
+    100188: neckJoint_1_IK1
+    100190: neckJoint_1_result
+    100192: neckJoint_2_FK
+    100194: neckJoint_2_IK
+    100196: neckJoint_2_result
+    100198: neckJoint_3_FK
+    100200: neckJoint_3_IK
+    100202: neckJoint_3_result
+    100204: neckJoint_4_FK
+    100206: neckJoint_4_IK1
+    100208: neckJoint_4_result
+    100210: neckJoint_5_FK
+    100212: neckJoint_5_IK
+    100214: neckJoint_5_result
+    100216: neckJoint_6_FK
+    100218: neckJoint_6_IK
+    100220: neckJoint_6_result
+    100222: neckJoint_7_FK
+    100224: neckJoint_7_IK
+    100226: neckJoint_7_result
+    100228: neckJoint_8_FK
+    100230: neckJoint_8_IK
+    100232: neckJoint_8_result
+    100234: neckJoint_9_FK
+    100236: neckJoint_9_IK
+    100238: neckJoint_9_result
+    100240: nurbsCircle14
+    100242: nurbsCircle15
+    100244: nurbsCircle16
+    100246: nurbsCircle2
+    100248: nurbsCircle3
+    100250: nurbsCircle4
+    100252: pCube29
+    100254: pCube31
+    100256: pCube31 1
+    100258: pCube31 2
+    100260: pCube31 3
+    100262: pCube31 4
+    100264: pCube31 5
+    100266: pCube32
+    100268: pCube32 1
+    100270: pCube32 2
+    100272: pCube32 3
+    100274: pCube32 4
+    100276: pCube32 5
+    100278: pCube7
+    100280: pCube7 1
+    100282: pCube7 2
+    100284: pCube7 3
+    100286: pCube7 4
+    100288: pCube7 5
+    100290: pPlane1
+    100292: pPlane2
+    100294: pPlane24
+    100296: pPlane25
+    100298: pPlane26
+    100300: pPlane30
+    100302: pPlane31
+    100304: pPlane32
+    100306: pPlane33
+    100308: pPlane36
+    100310: pPlane37
+    100312: pPlane42
+    100314: pPlane5
+    100316: pPlane8
+    100318: Rig
+    100320: rightMane_1_result
+    100322: rightMane_2_result
+    100324: rightMane_3_result
+    100326: rightMane_4_result
+    100328: rightMane_5_result
+    100330: rightMane_6_result
+    100332: rightMane_GRP
+    100334: rightmane_neck_const_loc
+    100336: rightmane_neck_end_const_loc
+    100338: second_ribJointLeft_1_result
+    100340: second_ribJointLeft_2_result
+    100342: second_ribJointLeft_3_result
+    100344: second_ribJointRight_1_result
+    100346: second_ribJointRight_2_result
+    100348: second_ribJointRight_3_result
+    100350: Spine_FK_GRP
+    100352: Spine_IK_CTRL
+    100354: Spine_IK_GRP
+    100356: spineRig_GRP
+    100358: third_ribJointLeft_1_result
+    100360: third_ribJointRight_1_result
+    400000: clawBody_1_1
+    400002: clawBody_1_2
+    400004: clawBody_1_3
+    400006: clawBody_1_4
+    400008: clawBody_1_5
+    400010: clawBody_1_6
+    400012: clothJointEndLeft_result
+    400014: clothJointEndLeft_result 1
+    400016: cluster13Handle
+    400018: cluster14Handle
+    400020: cluster15Handle
+    400022: cluster16Handle
+    400024: cluster1Handle
+    400026: cluster3Handle
+    400028: cluster4Handle
+    400030: curve40
+    400032: curve43
+    400034: //RootNode
+    400036: DO_NOT_TOUCH_GRP
+    400038: dragonCylinder_1
+    400040: dragonCylinder_10
+    400042: dragonCylinder_11
+    400044: dragonCylinder_2
+    400046: dragonCylinder_3
+    400048: dragonCylinder_4
+    400050: dragonCylinder_5
+    400052: dragonCylinder_6
+    400054: dragonCylinder_7
+    400056: dragonCylinder_8
+    400058: dragonCylinder_9
+    400060: DragonMouth
+    400062: first_ribJointLeft_1_result
+    400064: first_ribJointLeft_2_result
+    400066: first_ribJointLeft_3_result
+    400068: first_ribJointRight_1_result
+    400070: first_ribJointRight_2_result
+    400072: first_ribJointRight_3_result
+    400074: GEO
+    400076: group3
+    400078: Head
+    400080: Head_joint_result
+    400082: headBandJoin_result
+    400084: ikHandle1
+    400086: ikHandle4
+    400088: ikHandle5
+    400090: jawJoint_result
+    400092: joint30
+    400094: joint31
+    400096: joint32
+    400098: joint33
+    400100: joint34
+    400102: joint35
+    400104: joint67
+    400106: joint67 1
+    400108: joint67 2
+    400110: joint67 3
+    400112: joint69
+    400114: joint71
+    400116: joint74
+    400118: joint76
+    400120: joint76 1
+    400122: joint78
+    400124: joint82
+    400126: joint84
+    400128: joint86
+    400130: joint89
+    400132: leftMane_neck_const_loc
+    400134: leftMane_neck_end_const_loc
+    400136: mane_cluster_GRP
+    400138: mane_neck_const_loc
+    400140: mane_neck_end_cost_loc
+    400142: maneCluster_4
+    400144: maneJoint_1_result
+    400146: maneRig_GRP
+    400148: mouthJoint_result
+    400150: neck_shoulder_const_loc
+    400152: neckClothJointLeft_result
+    400154: neckClothJointRight_result
+    400156: neckFK_ctrl_7
+    400158: neckIK_const_loc
+    400160: neckJNT_IKconst_GRP
+    400162: neckJNT_resultConst_GRP
+    400164: neckJoint_10_FK
+    400166: neckJoint_10_IK
+    400168: neckJoint_10_result
+    400170: neckJoint_11_FK
+    400172: neckJoint_11_IK
+    400174: neckJoint_11_result
+    400176: neckJoint_12_FK
+    400178: neckJoint_12_IK
+    400180: neckJoint_12_IK 1
+    400182: neckJoint_12_result
+    400184: neckJoint_1_FK
+    400186: neckJoint_1_IK
+    400188: neckJoint_1_IK1
+    400190: neckJoint_1_result
+    400192: neckJoint_2_FK
+    400194: neckJoint_2_IK
+    400196: neckJoint_2_result
+    400198: neckJoint_3_FK
+    400200: neckJoint_3_IK
+    400202: neckJoint_3_result
+    400204: neckJoint_4_FK
+    400206: neckJoint_4_IK1
+    400208: neckJoint_4_result
+    400210: neckJoint_5_FK
+    400212: neckJoint_5_IK
+    400214: neckJoint_5_result
+    400216: neckJoint_6_FK
+    400218: neckJoint_6_IK
+    400220: neckJoint_6_result
+    400222: neckJoint_7_FK
+    400224: neckJoint_7_IK
+    400226: neckJoint_7_result
+    400228: neckJoint_8_FK
+    400230: neckJoint_8_IK
+    400232: neckJoint_8_result
+    400234: neckJoint_9_FK
+    400236: neckJoint_9_IK
+    400238: neckJoint_9_result
+    400240: nurbsCircle14
+    400242: nurbsCircle15
+    400244: nurbsCircle16
+    400246: nurbsCircle2
+    400248: nurbsCircle3
+    400250: nurbsCircle4
+    400252: pCube29
+    400254: pCube31
+    400256: pCube31 1
+    400258: pCube31 2
+    400260: pCube31 3
+    400262: pCube31 4
+    400264: pCube31 5
+    400266: pCube32
+    400268: pCube32 1
+    400270: pCube32 2
+    400272: pCube32 3
+    400274: pCube32 4
+    400276: pCube32 5
+    400278: pCube7
+    400280: pCube7 1
+    400282: pCube7 2
+    400284: pCube7 3
+    400286: pCube7 4
+    400288: pCube7 5
+    400290: pPlane1
+    400292: pPlane2
+    400294: pPlane24
+    400296: pPlane25
+    400298: pPlane26
+    400300: pPlane30
+    400302: pPlane31
+    400304: pPlane32
+    400306: pPlane33
+    400308: pPlane36
+    400310: pPlane37
+    400312: pPlane42
+    400314: pPlane5
+    400316: pPlane8
+    400318: Rig
+    400320: rightMane_1_result
+    400322: rightMane_2_result
+    400324: rightMane_3_result
+    400326: rightMane_4_result
+    400328: rightMane_5_result
+    400330: rightMane_6_result
+    400332: rightMane_GRP
+    400334: rightmane_neck_const_loc
+    400336: rightmane_neck_end_const_loc
+    400338: second_ribJointLeft_1_result
+    400340: second_ribJointLeft_2_result
+    400342: second_ribJointLeft_3_result
+    400344: second_ribJointRight_1_result
+    400346: second_ribJointRight_2_result
+    400348: second_ribJointRight_3_result
+    400350: Spine_FK_GRP
+    400352: Spine_IK_CTRL
+    400354: Spine_IK_GRP
+    400356: spineRig_GRP
+    400358: third_ribJointLeft_1_result
+    400360: third_ribJointRight_1_result
+    4300000: pPlane42
+    4300002: pPlane37
+    4300004: pPlane36
+    4300006: pPlane33
+    4300008: pPlane32
+    4300010: pPlane31
+    4300012: pPlane30
+    4300014: pPlane26
+    4300016: pPlane25
+    4300018: pCube7
+    4300020: pCube31
+    4300022: pCube32
+    4300024: pCube7
+    4300026: pCube31
+    4300028: pCube32
+    4300030: pCube7
+    4300032: pCube31
+    4300034: pCube32
+    4300036: pCube7
+    4300038: pCube31
+    4300040: pCube32
+    4300042: pCube7
+    4300044: pCube31
+    4300046: pCube32
+    4300048: pCube7
+    4300050: pCube31
+    4300052: pCube32
+    4300054: pPlane24
+    4300056: Head
+    4300058: pPlane2
+    4300060: pPlane1
+    4300062: pPlane8
+    4300064: pPlane5
+    4300066: dragonCylinder_11
+    4300068: dragonCylinder_10
+    4300070: dragonCylinder_9
+    4300072: dragonCylinder_8
+    4300074: dragonCylinder_7
+    4300076: dragonCylinder_6
+    4300078: dragonCylinder_5
+    4300080: dragonCylinder_4
+    4300082: dragonCylinder_3
+    4300084: dragonCylinder_2
+    4300086: dragonCylinder_1
+    4300088: DragonMouth
+    7400000: DDragon_v13_3_Animation_7
+    9500000: //RootNode
+    13700000: dragonCylinder_1
+    13700002: dragonCylinder_10
+    13700004: dragonCylinder_11
+    13700006: dragonCylinder_2
+    13700008: dragonCylinder_3
+    13700010: dragonCylinder_4
+    13700012: dragonCylinder_5
+    13700014: dragonCylinder_6
+    13700016: dragonCylinder_7
+    13700018: dragonCylinder_8
+    13700020: dragonCylinder_9
+    13700022: DragonMouth
+    13700024: Head
+    13700026: pCube31
+    13700028: pCube31 1
+    13700030: pCube31 2
+    13700032: pCube31 3
+    13700034: pCube31 4
+    13700036: pCube31 5
+    13700038: pCube32
+    13700040: pCube32 1
+    13700042: pCube32 2
+    13700044: pCube32 3
+    13700046: pCube32 4
+    13700048: pCube32 5
+    13700050: pCube7
+    13700052: pCube7 1
+    13700054: pCube7 2
+    13700056: pCube7 3
+    13700058: pCube7 4
+    13700060: pCube7 5
+    13700062: pPlane1
+    13700064: pPlane2
+    13700066: pPlane24
+    13700068: pPlane25
+    13700070: pPlane26
+    13700072: pPlane30
+    13700074: pPlane31
+    13700076: pPlane32
+    13700078: pPlane33
+    13700080: pPlane36
+    13700082: pPlane37
+    13700084: pPlane42
+    13700086: pPlane5
+    13700088: pPlane8
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

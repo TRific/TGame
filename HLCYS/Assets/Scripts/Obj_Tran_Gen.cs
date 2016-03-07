@@ -3,10 +3,10 @@ using System.Collections;
 
 public class Obj_Tran_Gen : MonoBehaviour {
     public GameObject myBld;
-    public float speed = 75.0f;
-    private Vector3 startGenerationPoint1 = new Vector3(-5.8f, 1.5f, -55.0f);
-    private Vector3 startGenerationPoint2 = new Vector3(5.0f, 1.5f, -55.0f);
-    private Vector3 startGenerationPoint3 = new Vector3(-0.4f, 1.5f, -55.0f);
+    public float speed = 100.0f;
+    private Vector3 startGenerationPoint1 = new Vector3(-5.8f, 1.5f, -200.0f);
+    private Vector3 startGenerationPoint2 = new Vector3(5.0f, 1.5f, -200.0f);
+    private Vector3 startGenerationPoint3 = new Vector3(-0.4f, 1.5f, -200.0f);
     int n;
 
     // Use this for initialization

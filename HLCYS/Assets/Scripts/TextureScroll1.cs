@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class TextureScroll1 : MonoBehaviour {
-    public float scrollSpeed;
+    public float scrollSpeed = 1.73f;
     //private Vector2 myOffset = new Vector2(0, 1);
 	// Use this for initialization
 	void Start () {

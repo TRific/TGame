@@ -9,6 +9,8 @@ public class BoxScriptV2Test : MonoBehaviour {
     public GameObject GAMEOVER_MENU;
     public GameObject pauseMenu;
     public GameObject nopauseMenu;
+	public AudioSource bike;
+	public AudioClip crash_sfx;
 
     //private bool lerpOn = false;
     //public float delay = 0.5f;
@@ -348,6 +350,7 @@ public class BoxScriptV2Test : MonoBehaviour {
     {
         //if (col.gameObject.name == "Cube")
         //{
+		bike.PlayOneShot(crash_sfx,1.0f);
         Destroy(col.gameObject);
         Debug.Log(col.gameObject.name);
         player_is_dead = true;

@@ -54,6 +54,8 @@ public class MenuScript : MonoBehaviour {
     {
         Debug.Log("You pressed Start Game");
         SceneManager.LoadScene("NewGamePage");
+		//BoxScriptV2Test.player_is_dead = false;
+		BoxSwingScriptV2.player_is_dead = false;
     }
 
     public void OnOptions()

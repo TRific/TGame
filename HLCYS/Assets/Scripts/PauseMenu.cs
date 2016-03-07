@@ -68,4 +68,15 @@ public class PauseMenu : MonoBehaviour {
         Time.timeScale = 1;
         paused = false;
     }
+
+	public void OnRestartGame()
+	{
+		nopauseMenu.SetActive(true);
+		pauseMenu.SetActive(false);
+		GAMEOVER_MENU.SetActive(false);
+		Debug.Log("You pressed Start Game");
+		SceneManager.LoadScene("NewGamePage");
+		//BoxScriptV2Test.player_is_dead = false;
+		BoxSwingScriptV2.player_is_dead = false;//for andriod swipe
+	}
 }
